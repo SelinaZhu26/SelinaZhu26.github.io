@@ -4,7 +4,7 @@ let colorButton = document.querySelector("#dark-mode")
 
 function darkColor() {
 // select body element and change background color
-    document.body.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
+    document.body.style.backgroundColor = "rgb(0, 0, 102)"
 }
 
 colorButton.addEventListener("click", darkColor)
