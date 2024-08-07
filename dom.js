@@ -1,11 +1,28 @@
-let colorButton = document.querySelector("#dark-mode")
+let buttonColor = document.querySelector("#button-mode")
 
-// declare event handler function
-
-function darkColor() {
-// select body element and change background color
-    document.body.style.backgroundColor = "rgb(0, 0, 102)"
+function turnDark () {
+    document.querySelector("body").style = "color: white; background-color: black;"
+    document.querySelector("#button-mode").innerText = "Light Mode"
 }
 
-colorButton.addEventListener("click", darkColor)
+function turnLight () {
+    document.querySelector("body").style = "color: black; background-color: white;"
+    document.querySelector("#button-mode").innerText = "Dark Mode"
+}
+
+let userStatus = "light"
+
+buttonColor.addEventListener("click", () => {
+    if (userStatus == "light") {
+        turnDark ()
+        userStatus = "dark"
+    }
+
+    else {
+        turnLight ()
+        userStatus = "light"
+    }
+
+})
+
 
