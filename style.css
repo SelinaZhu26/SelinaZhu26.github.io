@@ -1,0 +1,25 @@
+.navbar {
+    height: 100px;
+    margin-bottom: 150px;
+}
+
+.photo {
+    margin-left: 200px;
+}
+
+h1 {
+    font-family: serif;
+}
+
+.introduction {
+    margin-right: 100px;
+}
+
+body {
+    background-color: burlywood;
+}
+
+.navword {
+    color:black;
+    text-decoration: none;
+}
